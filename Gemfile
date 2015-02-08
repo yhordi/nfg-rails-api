@@ -6,11 +6,11 @@ gem 'spring', :group => :development
 gem 'pg'
 gem 'bcrypt', '~> 3.1.7'
 gem 'jbuilder'
+gem 'factory_girl_rails'
 group :test do
   gem 'rspec-rails'
   gem 'capybara'
   gem 'selenium-webdriver'
-  gem 'factory_girl_rails'
   gem 'database_cleaner'
   gem 'shoulda-matchers'
   gem 'faker'
