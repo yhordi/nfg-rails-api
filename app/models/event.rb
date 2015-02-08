@@ -1,7 +1,7 @@
 class ActiveEventValidator < ActiveModel::Validator
   def validate(record)
     if record.time.present? && record.time <= Time.now
-      errors.add(:time, "can't be in the past")
+      record.errors.add(:time, "can't be in the past")
     end
   end
 end
